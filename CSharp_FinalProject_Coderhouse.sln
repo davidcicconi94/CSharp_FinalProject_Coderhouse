@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entregable1", "Project_Coderhouse\Entregable1.csproj", "{10DEC875-300B-4735-BD97-25C2D8F6B6EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coder.Bussiness", "Project_Coderhouse\Coder.Bussiness.csproj", "{10DEC875-300B-4735-BD97-25C2D8F6B6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coder.DataAccess", "DataAccess\Coder.DataAccess.csproj", "{E9EB2A21-FFBD-4E7E-871F-69B1E4F277DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coder.Api", "WinForms\Coder.Api.csproj", "{B8B57F22-E0DA-4D2F-87CB-628B701B9413}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{10DEC875-300B-4735-BD97-25C2D8F6B6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10DEC875-300B-4735-BD97-25C2D8F6B6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10DEC875-300B-4735-BD97-25C2D8F6B6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9EB2A21-FFBD-4E7E-871F-69B1E4F277DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9EB2A21-FFBD-4E7E-871F-69B1E4F277DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9EB2A21-FFBD-4E7E-871F-69B1E4F277DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9EB2A21-FFBD-4E7E-871F-69B1E4F277DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B57F22-E0DA-4D2F-87CB-628B701B9413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B57F22-E0DA-4D2F-87CB-628B701B9413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B57F22-E0DA-4D2F-87CB-628B701B9413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B57F22-E0DA-4D2F-87CB-628B701B9413}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
