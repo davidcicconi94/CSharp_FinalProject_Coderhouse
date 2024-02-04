@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Project_Coderhouse.Models;
+using Project_Coderhouse.Entities;
 
 
 namespace Coder.DataAccess.Context

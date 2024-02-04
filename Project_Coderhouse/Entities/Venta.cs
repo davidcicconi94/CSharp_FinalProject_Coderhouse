@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Coderhouse.Models
+namespace Project_Coderhouse.Entities
 {
     public class Venta
     {

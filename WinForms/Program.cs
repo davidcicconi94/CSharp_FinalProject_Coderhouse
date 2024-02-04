@@ -1,4 +1,5 @@
 using Coder.DataAccess.Context;
+using Coder.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
