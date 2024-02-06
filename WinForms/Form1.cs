@@ -8,6 +8,8 @@ namespace Coder.Api
         public Form1()
         {
             InitializeComponent();
+            CargarUsuariosEnDataGridView();
+            CargarListaDeProductosEnDataGridView();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -22,17 +24,50 @@ namespace Coder.Api
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int idUsuario = 0;
 
-            Usuario usuario = UsuarioData.ObtenerUsuario(idUsuario);
+        }
 
-            if(usuario != null) 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CargarUsuariosEnDataGridView()
+        {
+            try
             {
-                listBox1.Items.Add(usuario.Nombre);   
-            } else
-            {
-                listBox1.Text = $"Usuario con ID {idUsuario} no encontrado.";
+                List<Usuario> listaUsuarios = UsuarioData.ListarUsuarios();
+
+                dataGridView1.DataSource = listaUsuarios;
+
             }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void CargarListaDeProductosEnDataGridView()
+        {
+            try
+            {
+                List<Producto> productos = ProductoData.ListarProductos();
+
+                dataGridView1.DataSource = productos;
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());   
+            }
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

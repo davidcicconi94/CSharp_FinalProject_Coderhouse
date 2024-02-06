@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Coder.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240204175316_Initial")]
-    partial class Initial
+    [Migration("20240205114117_UserPropertyModified")]
+    partial class UserPropertyModified
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace Coder.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Project_Coderhouse.Models.Producto", b =>
+            modelBuilder.Entity("Project_Coderhouse.Entities.Producto", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +53,7 @@ namespace Coder.DataAccess.Migrations
                     b.ToTable("Productos");
                 });
 
-            modelBuilder.Entity("Project_Coderhouse.Models.ProductoVendido", b =>
+            modelBuilder.Entity("Project_Coderhouse.Entities.ProductoVendido", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -75,7 +75,7 @@ namespace Coder.DataAccess.Migrations
                     b.ToTable("ProductoVendidos");
                 });
 
-            modelBuilder.Entity("Project_Coderhouse.Models.Usuario", b =>
+            modelBuilder.Entity("Project_Coderhouse.Entities.Usuario", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -108,7 +108,7 @@ namespace Coder.DataAccess.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("Project_Coderhouse.Models.Venta", b =>
+            modelBuilder.Entity("Project_Coderhouse.Entities.Venta", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

@@ -28,46 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            listBox1 = new ListBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // dataGridView1
             // 
-            button1.Location = new Point(565, 301);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(565, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(223, 264);
-            listBox1.TabIndex = 1;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(36, 26);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(573, 218);
+            dataGridView1.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick_2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(listBox1);
-            Controls.Add(button1);
+            ClientSize = new Size(827, 450);
+            Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private ListBox listBox1;
+        private DataGridView dataGridView1;
     }
 }

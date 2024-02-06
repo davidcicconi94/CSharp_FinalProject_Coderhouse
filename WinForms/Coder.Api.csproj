@@ -26,4 +26,8 @@
     <ProjectReference Include="..\Project_Coderhouse\Coder.Bussiness.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>

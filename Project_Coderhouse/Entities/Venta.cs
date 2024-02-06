@@ -1,26 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Project_Coderhouse.Entities
 {
     public class Venta
     {
-        private int id;
-        private string comentarios;
-        private int idUsuario;
+        public int Id { get; set; }
+        public string Comentarios { get; set; }
+        public int IdUsuario { get; set; }
 
-        public int Id { get { return id; } set { id = value; } }
-        public string Comentarios { get { return comentarios; } set { comentarios = value; } }
-        public int IdUsuario { get { return idUsuario; } set { idUsuario = value; } }
+        public virtual Usuario Usuario { get; set; }
+        public virtual ICollection<ProductoVendido> ProductosVendidos { get; set; } = new HashSet<ProductoVendido>();
 
-        public Venta(int id, string comentarios, int idUsuario) 
+        public Venta() { }  
+
+        public Venta(int id, string comentarios, int idUsuario)
         {
-            this.id = id;
-            this.comentarios = comentarios;
-            this.idUsuario = idUsuario;
+            Id = id;
+            Comentarios = comentarios;
+            IdUsuario = idUsuario;
         }
     }
 }
